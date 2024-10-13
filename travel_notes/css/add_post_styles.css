@@ -1,0 +1,77 @@
+/* Контейнер для формы */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для формы */
+.post-form {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+/* Стили для каждой группы элементов */
+.post-form .form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Стили для меток */
+.post-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Стили для полей ввода и textarea */
+.post-form input[type="text"],
+.post-form textarea,
+.post-form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Стили для кнопки */
+.post-form .submit-btn {
+    padding: 10px 15px;
+    background-color: #016eb6da;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+.post-form .submit-btn:hover {
+    background-color: #055285;
+}
+
+/* Стили для сообщения */
+.message {
+    color: green;
+    margin-bottom: 15px;
+    text-align: center;
+}
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    .post-form {
+        max-width: 100%;
+    }
+}

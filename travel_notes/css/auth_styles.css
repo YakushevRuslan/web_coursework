@@ -1,0 +1,53 @@
+/* Стили для контейнера формы авторизации */
+.auth-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f9f9f9;
+}
+
+/* Стили для каждого элемента формы */
+.auth-container .form-group {
+    margin-bottom: 15px;
+}
+
+/* Стили для меток формы */
+.auth-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Стили для полей ввода */
+.auth-container input[type="text"],
+.auth-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Стили для кнопки */
+.auth-container button {
+    padding: 10px 15px;
+    background: #016eb6da; /* Основной цвет кнопки */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.auth-container button:hover {
+    background: #055285; /* Цвет кнопки при наведении */
+}
+
+/* Стили для ошибки */
+.error-message {
+    color: red;
+    margin-bottom: 15px;
+}

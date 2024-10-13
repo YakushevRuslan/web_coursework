@@ -1,0 +1,218 @@
+/* Базовые настройки и сброс стилей */
+body, h1, h2, h3, h4, p, ul, li, a, footer, header, nav {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #183a47;
+}
+
+/* Общие стили для документа */
+body {
+    background-color: #7ba6be;
+}
+
+/* Настройка основного контейнера для всего контента */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для шапки сайта */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #016eb6da;
+    padding: 20px;
+    color: white;
+}
+
+/* Надпись сайта белой */
+header h1 {
+    font-size: 36px;
+    margin-bottom: 0;
+    color: white; /* Изменено на белый цвет */
+}
+
+/* Стили для навигации в шапке */
+header nav {
+    display: flex;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    display: inline-block;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+header nav a:hover {
+    background-color: #01233f;
+}
+
+/* Стили для основного контента */
+.content {
+    margin: 20px 0;
+}
+
+/* Стили для постов */
+.post {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    background: #f9f9f9;
+}
+
+.post h2 {
+    font-size: 28px;
+    color: #031633;
+    margin-bottom: 10px;
+}
+
+.post p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #0c0b0b;
+}
+
+/* Стили для изображений в постах */
+.post img {
+    display: block;
+    margin: 15px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* "Читать полностью" */
+.read-more {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #5281ad; /* Цвет кнопки */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.read-more:hover {
+    background-color: #055285; /* Цвет при наведении */
+}
+
+/* Стили для подвала сайта */
+footer {
+    background-color: #016eb6da;
+    color: rgb(173, 212, 235);
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Медиазапросы для адаптивного дизайна */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    header nav {
+        display: block;
+    }
+
+    header nav a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 22px;
+    }
+
+    .post h2 {
+        font-size: 22px;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
+/* Стили для поста */
+.post {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    background: #f9f9f9;
+}
+
+/* Центрирование изображения */
+.content img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Стили для комментариев */
+.comment {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background: #e9e9e9;
+}
+
+/* Форма для добавления комментария */
+.comment-form {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #f3f3f3;
+}
+
+.comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.comment-form button {
+    padding: 10px 15px;
+    background: #016eb6da;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.comment-form button:hover {
+    background: #055285;
+}
